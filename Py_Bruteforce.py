@@ -4,7 +4,7 @@ import PyPDF4
 
 def crack_password(password):
     # Open the PDF file in read-binary mode
-    with open('Jpdf.pdf', 'rb') as file:
+    with open('FileName.pdf', 'rb') as file:
         # Create a PDF object
         pdf = PyPDF4.PdfFileReader(file)
 
@@ -16,7 +16,7 @@ def crack_password(password):
             return None
 
 # Set the known password prefix
-password_prefix = '91928'
+password_prefix = '12345'
 
 # Create a list of passwords to try
 passwords = []
